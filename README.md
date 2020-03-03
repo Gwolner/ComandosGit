@@ -1,38 +1,50 @@
 # Comandos Git
 
-RepositÛrio usado para praticar comandos git.
+Reposit√≥rio usado para praticar comandos git.
 
-## 1 - RepositÛrio
+## 1 - Reposit√≥rio
 
-### Criando um RepositÛrio
+### Criando um Reposit√≥rio
 
-Todo repositorio Git armazena as informaÁoes dentro de uma pasta oculta chamada "/.git". 
-Para que os arquivos de uma pasta possam ser versionados pelo Git, È preciso iniciar o repositÛrio.
+Todo repositorio Git armazena as informa√ßoes dentro de uma pasta oculta chamada "/.git". 
+Para que os arquivos de uma pasta possam ser versionados pelo Git, √© preciso iniciar o reposit√≥rio.
 Para isso, execute o comando:
 
 ```
 git init
 ```
 
-## 2 - Branches
+### Listando altera√ßoes
 
-### Listando alteraÁoes
-
-Esse comando lista todos os arquivos que foram modificados desde o seu ˙ltimo commit.
+Esse comando lista todos os arquivos que foram modificados no reposit√≥rio desde o seu √∫ltimo commit.
 
 ```
 git status
 ```
 
-### Listando Branches
+## 2 - Branches
 
-Lista todos os branches presentes no repositÛrio local.
+### Criando uma branch
+
+```
+git checkout -b minha-nova-branch
+```
+
+### Listando branches
+
+Lista todos os branches presentes no reposit√≥rio local.
 
 ```
 git branch
 ```
 
-Lista todos os branches presentes no repositÛrio remoto.
+Lista todos os branches presentes no reposit√≥rio remoto.
+
+```
+git branch -a
+```
+
+### Alternando entre branches
 
 ```
 git checkout minha-branch
@@ -40,26 +52,26 @@ git checkout minha-branch
 
 ### Excluindo branches
 
-Excluir uma branch local com -d È mais segura, pois ela sÛ apaga a branch se voce j· tiver feito merge 
-ou enviado as alteraÁoes para seu repositÛrio remoto, evitando perda de cÛdigo.
+Excluir uma branch local com -d s√≥ ir√° apagar a branch se voce j√° tiver feito merge 
+ou enviado as altera√ßoes para seu reposit√≥rio remoto, evitando perda de c√≥digo.
 
 ```
 git branch -d nome-da-branch
 ```
 
-Excluir uma branch local com -D È ignora o estado da sua branch, forÁando a sua remoÁao.
+Excluir uma branch local com -D √© ignora o estado da sua branch, for√ßando a sua remo√ßao.
 
 ```
 git branch -D nome-da-branch
 ```
 
-### Subir branch local para repositÛrio
+### Subir branch local para reposit√≥rio
 
 ```
 git push origin nome-da-branch
 ```
 
-### Puxar branch do repositÛrio para o local
+### Puxar branch do reposit√≥rio para o local
 
 ```
 git checkout -track origin/nome-da-branch
@@ -67,9 +79,9 @@ git checkout -track origin/nome-da-branch
 
 ## 3 - Commits
 
-###  HistÛrico de Commits
+###  Hist√≥rico de Commits
 
-visualizar o histÛrico de commits.
+visualizar o hist√≥rico de commits.
 
 ```
 git log
