@@ -1,2 +1,12 @@
-# comandos-git
-RepositÃ³rio usado para praticar comandos git.
+# Comandos Git
+
+Repositório usado para praticar comandos git.
+
+
+
+
+
+
+
+
+
