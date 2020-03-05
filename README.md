@@ -22,6 +22,14 @@ Esse comando lista todos os arquivos que foram modificados no repositório desde
 git status
 ```
 
+### Atualizar repositório local
+
+Pode-se atualizar o repositório local com a versão mais nova do repositório remoto.
+
+```
+git pull
+```
+
 ## 2 - Branches
 
 ### Criando uma branch
@@ -86,79 +94,3 @@ visualizar o histórico de commits.
 ```
 git log
 ```
-
-### 
-
-
-
-
-
-```
-
-```
-
-### 
-
-
-
-
-
-```
-
-```
-
-### 
-
-
-
-
-
-```
-
-```
-
-### 
-
-
-
-
-
-```
-
-```
-
-### 
-
-
-
-
-
-```
-
-```
-
-### 
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
