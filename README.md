@@ -11,13 +11,11 @@ Este documento faz uso de imagens (emojis) para facilitar a compreensão do coma
 Abaixo, um resumo deste documento: 
 
 * [Estrutura Git](https://github.com/Gwolner/comandos-git#estrutura-git)
-* [Repositório local](https://github.com/Gwolner/comandos-git#repositorio-local)
-* [Container/Stage](https://github.com/Gwolner/comandos-git#containerstage)
-* [Projeto](https://github.com/Gwolner/comandos-git#projeto)
-* [Commit](https://github.com/Gwolner/comandos-git#commit)
-* [Branch](https://github.com/Gwolner/comandos-git#branch)
-* [Comandos Bash](https://github.com/Gwolner/comandos-git#comandos-bash)
-
+* [Repositório local](https://github.com/Gwolner/comandos-git#repositório-local-computer)
+* [Container/Stage](https://github.com/Gwolner/comandos-git#containerstage-postbox)
+* [Projeto](https://github.com/Gwolner/comandos-git#projeto-file_folder)
+* [Commit](https://github.com/Gwolner/comandos-git#commits-pushpin)
+* [Branch](https://github.com/Gwolner/comandos-git#branches-cactus)
 
 ## Estrutura Git
 
@@ -78,19 +76,10 @@ Todos os arquivos alterado ou criados.
 git add .
 ```
 
-### :file_folder: Criar arquivo
-```
-touche nome-arquivo.extensao
-```
-
-
-
-
-
-
 ## Commits :pushpin:
 
 ### :pushpin: Histórico 
+
 Visualizar o histórico de commits.
 ```
 git log
@@ -100,7 +89,9 @@ Histórico de commits resumido.
 ```
 git log --oneline
 ```
+
 ### :pushpin: Visualização gráfica
+
 Histórico de commits com gráfico.
 ```
 git log --graph
@@ -114,6 +105,7 @@ git log --graph
 ## Branches :cactus:
 
 ### :cactus: Criando uma branch
+
 ```
 git checkout -b minha-nova-branch
 ```
@@ -131,6 +123,7 @@ git branch -a
 ```
 
 ### :cactus: Alternando entre branches
+
 ```
 git checkout minha-branch
 ```
@@ -149,12 +142,13 @@ git branch -D nome-da-branch
 ```
 
 ### :cactus: Subir branch local para repositório
+
 ```
 git push origin nome-da-branch
 ```
 
 ### :cactus: Puxar branch do repositório para o local
+
 ```
 git checkout -track origin/nome-da-branch
 ```
-
