@@ -4,37 +4,20 @@ Repositório usado para praticar comandos git com registro dos comandos já apre
 
 * Estrutura
 * Comandos iniciais - Master
-  * 1 - Repositório remoto
-  * 2 - Repositório local
-  * 3 - Projeto
-  * 4 - Container/Stage
+  * 1 - Repositório local
+  * 2 - Projeto
+  * 3 - Container/Stage
 * Comandos específicos - Branch & Commit
 * Terminal Bash
 
 
 ## Estrutura
 
-<b>Projeto :file_folder: --> Container/Stage :postbox: --> Repositório local :computer: --> Repositório remoto :cloud:</b>
+<b>:file_folder: Projeto --> :postbox: Container/Stage --> :computer: Repositório local --> :cloud: Repositório remoto</b>
 
-<i><b>IMPORTANTE!</b></i>
-Para que exista um container é preciso que primeiro exista um repositório local. Não há como criar o container e depois o repositório local. Sendo assim, será abordado primeiro os comandos do repositorio e, logo em seguida, os comandos do container.
+## Repositório local :computer:
 
-
-
-## Comandos iniciais - Master
-
-### 1 - Repositório remoto
-
-#### :cloud: Baixar repositório remoto.
-
-Pode-se baixar um repositório remoto para um PC desde que se conheça se endereço.
-```
-git clone endereço-repositorio
-```
-
-### 2 - Repositório local
-
-#### :computer: Criando um Repositório
+### :computer: Criando um Repositório
 
 Todo repositorio Git armazena as informaçoes dentro de uma pasta oculta chamada "/.git". 
 Para que os arquivos de uma pasta possam ser versionados pelo Git, é preciso iniciar o repositório.
@@ -43,23 +26,39 @@ Para isso, execute o comando:
 git init
 ```
 
-#### :computer: Atualizar repositório remoto
+### :computer: Atualizar repositório remoto
 
 Envia alterações do repositorio local para o repositório remoto.
 ```
 git push
 ```
 
-#### :computer: Atualizar repositório local
+### :computer: Atualizar repositório local
 
 Atualizar o repositório local com a versão mais recente do repositório remoto.
 ```
 git pull
 ```
 
-### 3 - Projeto
+## Container/Stage :postbox:
 
-#### :file_folder: Adicionar alteraçõs do projeto ao container.
+### :postbox: Listando alteraçoes
+
+Lista todos os arquivos e diretórios modificados/criados no projeto em relação ao último commit do container.
+```
+git status
+```
+
+### :postbox: Enviando alterações para o repositório local
+
+Envia para o repositório local a ultima modificação realizada no container, além de permitir uma mensagem que explique essa modificação. 
+```
+git commit -m "mensagem"
+```
+
+## Projeto :file_folder:
+
+### :file_folder: Adicionar alteraçõs do projeto ao container.
 
 Arquivos específicos.
 ```
@@ -70,31 +69,15 @@ Todos os arquivos alterado ou criados.
 ```
 git add .
 ```
-Ou 
-```
-git add *
-```
-#### :file_folder: Criar arquivo
+
+### :file_folder: Criar arquivo
 ```
 touche nome-arquivo.extensao
 ```
 
-### 4 - Container/Stage
 
-#### :postbox: Listando alteraçoes
 
-Lista todos os arquivos e diretórios modificados/criados no projeto em relação ao último commit do container.
-```
-git status
-```
-
-#### :postbox: Enviando alterações para o repositório local
-
-Envia para o repositório local a ultima modificação realizada no container, além de permitir uma mensagem que explique essa modificação. 
-```
-git commit -m "mensagem"
-```
-
+=====================================================AJUSTAR DAQUI PRA BAIXO======================
 ## Comandos específicos - Branch & Commit
 
 ### 6 - Commits
@@ -164,19 +147,5 @@ git push origin nome-da-branch
 #### :cactus: Puxar branch do repositório para o local
 ```
 git checkout -track origin/nome-da-branch
-```
-
-
-
-## Terminal Bash
-
-:desktop_computer: Exibir conteúdo de um diretório.
-```
-ls
-```
-
-:desktop_computer: Limpar a tela.
-```
-clear
 ```
 
