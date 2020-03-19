@@ -89,8 +89,29 @@ git checkout -track origin/nome-da-branch
 
 ###  Histórico de Commits
 
-visualizar o histórico de commits.
+Visualizar o histórico de commits.
 
 ```
 git log
 ```
+
+Histórico de commits resumido.
+
+```
+git log --oneline
+```
+
+## 4 - Comandos auxiliares
+
+Limpar a tela.
+
+```
+clear
+```
+
+Exibir conteúdo de um diretório.
+
+```
+ls
+```
+
