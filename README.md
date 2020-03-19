@@ -1,17 +1,25 @@
 # Comandos Git
 
-Repositório usado para praticar comandos git com registro dos comandos já aprendidos.
+Repositório usado para prática e registro de comandos Git.
 
-* Estrutura
-* Comandos iniciais - Master
-  * 1 - Repositório local
-  * 2 - Projeto
-  * 3 - Container/Stage
-* Comandos específicos - Branch & Commit
-* Terminal Bash
+O intúito deste repositório é servir de <b>consulta</b>, não como "passo-a-passo", ou seja, não existe uma sequencia a ser seguida. 
+
+Se precisar de comandos para o repositorio local, basta consultar o tópico que trata disto. Precisa de comandos de branch? Vá para o tópico que trata delas. E assim por diante.
+
+Este documento faz uso de imagens (emojis) para facilitar a compreensão do comando com o contexto que se é utilizado. Muitos dos repositórios existentes no Github usam apenas recurso textual, gerando certa dificuldade no leitor em se localizar na estrutura do Git.
+
+Abaixo, um resumo deste documento: 
+
+* [Estrutura Git](https://github.com/Gwolner/comandos-git#estrutura-git)
+* [Repositório local](https://github.com/Gwolner/comandos-git#repositorio-local)
+* [Container/Stage](https://github.com/Gwolner/comandos-git#containerstage)
+* [Projeto](https://github.com/Gwolner/comandos-git#projeto)
+* [Commit](https://github.com/Gwolner/comandos-git#commit)
+* [Branch](https://github.com/Gwolner/comandos-git#branch)
+* [Comandos Bash](https://github.com/Gwolner/comandos-git#comandos-bash)
 
 
-## Estrutura
+## Estrutura Git
 
 <b>:file_folder: Projeto --> :postbox: Container/Stage --> :computer: Repositório local --> :cloud: Repositório remoto</b>
 
@@ -77,11 +85,12 @@ touche nome-arquivo.extensao
 
 
 
-=====================================================AJUSTAR DAQUI PRA BAIXO======================
-## Comandos específicos - Branch & Commit
 
-### 6 - Commits
 
+
+## Commits :pushpin:
+
+### :pushpin: Histórico 
 Visualizar o histórico de commits.
 ```
 git log
@@ -91,7 +100,7 @@ Histórico de commits resumido.
 ```
 git log --oneline
 ```
-
+### :pushpin: Visualização gráfica
 Histórico de commits com gráfico.
 ```
 git log --graph
@@ -102,31 +111,31 @@ Histórico de commits com gráfico.
 git log --graph
 ```
 
-### 7 - Branches
+## Branches :cactus:
 
-#### :cactus: Criando uma branch
+### :cactus: Criando uma branch
 ```
 git checkout -b minha-nova-branch
 ```
 
-#### :cactus: Listando branches
+### :cactus: Listando branches
 
-Lista todos os branches presentes no repositório local.
+Lista branches presentes no repositório local.
 ```
 git branch
 ```
 
-Lista todos os branches presentes no repositório remoto.
+Lista branches presentes no repositório remoto.
 ```
 git branch -a
 ```
 
-#### :cactus: Alternando entre branches
+### :cactus: Alternando entre branches
 ```
 git checkout minha-branch
 ```
 
-#### :cactus: Excluindo branches
+### :cactus: Excluindo branches
 
 Excluir uma branch local com -d só irá apagar a branch se voce já tiver feito merge 
 ou enviado as alteraçoes para seu repositório remoto, evitando perda de código.
@@ -139,12 +148,12 @@ Excluir uma branch local com -D é ignora o estado da sua branch, forçando a su
 git branch -D nome-da-branch
 ```
 
-#### :cactus: Subir branch local para repositório
+### :cactus: Subir branch local para repositório
 ```
 git push origin nome-da-branch
 ```
 
-#### :cactus: Puxar branch do repositório para o local
+### :cactus: Puxar branch do repositório para o local
 ```
 git checkout -track origin/nome-da-branch
 ```
