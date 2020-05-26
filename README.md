@@ -1,6 +1,6 @@
 # Comandos Git
 
-Repositório usado para prática e registro de comandos Git.
+> Repositório usado para prática e registro de comandos Git.
 
 O intúito deste repositório é servir de <b>consulta</b>, não como "passo-a-passo", ou seja, não existe uma sequencia a ser seguida. 
 
