@@ -1,3 +1,0 @@
-Criando diretório dentro do Github:
-
-após um nome para o diretório, aperte / e assim será deslocado um nível pra baixo, onde se pode por qualquer aquivo tipo este, por exemplo.
